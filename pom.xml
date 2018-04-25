@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.bootcamp</groupId>
+    <artifactId>total-insurance-bmacovei</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>TotalInsuranceMacovei</name>
+    <description>Java Dev Bootcamp Project</description>
+
+    <properties>
+        <project.apache.poi.version>3.17</project.apache.poi.version>
+        <project.jackson.version>2.9.5</project.jackson.version>
+        <project.maven.compiler.version>3.1</project.maven.compiler.version>
+        <project.java.verison>1.8</project.java.verison>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${project.apache.poi.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${project.jackson.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${project.maven.compiler.version}</version>
+                <configuration>
+                    <source>${project.java.verison}</source>
+                    <target>${project.java.verison}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
